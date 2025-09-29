@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Case 1: Cyber Espionage Incident",
+    "summary": "A state-sponsored actor infiltrated a corporate network via phishing emails. Evidence includes IP logs from Russia and encrypted data exfiltration.",
+    "timeline": [
+      {"date": "2023-01-15", "event": "Phishing email sent", "value": 1},
+      {"date": "2023-01-20", "event": "Initial access gained", "value": 5},
+      {"date": "2023-02-10", "event": "Data exfiltration detected", "value": 10},
+      {"date": "2023-02-15", "event": "Incident contained", "value": 0}
+    ],
+    "locations": [
+      {"lat": 55.7558, "lng": 37.6173, "desc": "Suspect IP Origin - Moscow, Russia"},
+      {"lat": 40.7128, "lng": -74.0060, "desc": "Victim Network - New York, USA"}
+    ],
+    "details": "Forensic analysis revealed spear-phishing emails with malicious attachments. Network traffic showed 2.5GB data transfer to foreign servers. Malware signature matches APT28 toolkit. Recommendations: Implement multi-factor authentication and employee training."
+  },
+  {
+    "id": 2,
+    "title": "Case 2: Data Breach at Financial Firm",
+    "summary": "Unauthorized access to customer databases led to theft of 500K records. Attack vector: SQL injection vulnerability in web app.",
+    "timeline": [
+      {"date": "2023-03-05", "event": "Vulnerability exploited", "value": 3},
+      {"date": "2023-03-12", "event": "Data queried and stolen", "value": 8},
+      {"date": "2023-03-18", "event": "Breach discovered via anomaly detection", "value": 4},
+      {"date": "2023-03-20", "event": "Systems patched", "value": 0}
+    ],
+    "locations": [
+      {"lat": 51.5074, "lng": -0.1278, "desc": "Attack Origin - London, UK (VPN exit)"},
+      {"lat": 34.0522, "lng": -118.2437, "desc": "Victim HQ - Los Angeles, USA"}
+    ],
+    "details": "Log files showed repeated failed logins followed by successful injection. Stolen data included PII and credit card info sold on dark web. Chain of custody maintained for all artifacts. Recommendations: Regular code audits and WAF deployment."
+  },
+  {
+    "id": 3,
+    "title": "Case 3: Ransomware Malware Infection",
+    "summary": "Ransomware encrypted critical files on a hospital server. Payload delivered via infected USB drive from an insider threat.",
+    "timeline": [
+      {"date": "2023-04-01", "event": "USB inserted", "value": 2},
+      {"date": "2023-04-05", "event": "Encryption started", "value": 9},
+      {"date": "2023-04-08", "event": "Ransom demand received", "value": 7},
+      {"date": "2023-04-10", "event": "Decryption key obtained (no payment)", "value": 0}
+    ],
+    "locations": [
+      {"lat": 37.7749, "lng": -122.4194, "desc": "Infection Source - San Francisco, USA (Employee Home)"},
+      {"lat": 40.7306, "lng": -73.9352, "desc": "Affected Server - Brooklyn, NY, USA"}
+    ],
+    "details": "Hash analysis matched Ryuk ransomware variant. Volatility memory dumps revealed persistence mechanisms. No exfiltration detected, but backups were hit. Forensic imaging completed within 24 hours. Recommendations: Air-gapped backups and USB restrictions."
+  }
+]
