@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark OSINT Forensic Reports</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dark OSINT</h1>
+        <p>Digital Forensic Report Platform</p>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Cases</h2>
+            <ul id="case-list"></ul>
+        </nav>
+
+        <main id="main-content">
+            <section id="summary" class="hidden">
+                <h2 id="case-title"></h2>
+                <p id="case-summary"></p>
+            </section>
+
+            <section id="graph-section">
+                <h3>Event Timeline Graph</h3>
+                <canvas id="timeline-chart"></canvas>
+            </section>
+
+            <section id="map-section">
+                <h3>Evidence Mapping</h3>
+                <div id="map"></div>
+            </section>
+
+            <section id="details-section" class="hidden">
+                <h3>Detailed Analysis</h3>
+                <p id="case-details"></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Dark OSINT. All rights reserved. For forensic investigations only.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
